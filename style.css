@@ -1,0 +1,119 @@
+/* Initial Setup */
+*, 
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+    /* color: white; */
+    font: inherit;
+    line-height: 1.3125;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.wrapper {
+    background-color: rgb(25, 39, 52);
+    border-radius: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 0px solid black;
+    width: 348px;
+    margin: 20px;
+}
+
+.cell:not(:last-child){
+    border-bottom: 1px solid rgb(56, 68, 77);
+}
+
+.title {
+    font-weight: 800;
+    font-size: 19px;    
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(56, 68, 77);
+    padding: 10px 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.cell {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    align-items: stretch;
+    border-bottom: 1px solid rgb(56, 68, 77);
+    padding: 10px 15px;
+}
+
+.avatar {
+    width: 20%;
+}
+.avatar img{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.col2-center {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items: center;
+    position: relative;
+}
+.col2-spacebetween {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+.name-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-block-display {
+    display:flex;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.name-block-id {
+    display: flex;
+    font-weight: 400;
+    color: rgb(136, 153, 166);
+    font-size: 15px;
+}
+.follow {
+    display: flex;
+    align-items: center;
+    color: rgb(29, 161, 242);
+    border: solid 1px rgb(29, 161, 242);
+    border-radius: 9999px;
+    padding: 0 1em;
+    height: 30px;
+    margin-left: 10px;
+    
+}
+
+.follow-btn {
+    color: rgb(29, 161, 242);
+}
