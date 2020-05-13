@@ -5,16 +5,20 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit; 
-    /* color: white; */
     font: inherit;
     line-height: 1.3125;
     text-decoration: none;
+    
 }
 
 body {
     background-color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
 }
+
+a { 
+    color: inherit; 
+} 
 
 .wrapper {
     background-color: rgb(25, 39, 52);
@@ -70,7 +74,7 @@ body {
 }
 
 .col2-center {
-    width: 80%;
+    flex-grow: 1;
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
@@ -117,3 +121,17 @@ body {
 .follow-btn {
     color: rgb(29, 161, 242);
 }
+
+.showmore {
+    padding: 15px;
+    color: rgb(29, 161, 242);
+}
+
+.showcore a {
+    text-decoration: inherit;
+}
+
+#item1 {
+    order: -1;
+}
+
